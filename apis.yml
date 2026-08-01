@@ -1,7 +1,24 @@
 aid: prcxi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/prcxi.png
 name: prcxi
-description: prcxi is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: prcxi (Suzhou Zhongxi Bioinformation Co., Ltd.) is a life-science automation company
+  founded in 2014 and based in Suzhou, China. It builds liquid-handling systems (manual, semi-automatic,
+  and fully automatic pipetting workstations such as the SC9000/SC9100/SC9200/SC9320 PRO series),
+  custom laboratory automation solutions, and general lab equipment including shaking incubators.
+  Its systems serve biopharmaceuticals, clinical diagnostics, public health, food safety, and
+  agricultural breeding. Surfaced as a portfolio company of qiming; the company publishes no public
+  developer/API surface, so this profile carries identity and domain-security signals only.
 url: https://raw.githubusercontent.com/api-evangelist/prcxi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Life Sciences
+- Laboratory Automation
+- Biotechnology
+- Liquid Handling
+- Scientific Instruments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/prcxi-domain-security.yml
 - type: Website
   url: https://prcxi.com
+- type: Website
+  name: English site
+  url: https://en.prcxi.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
